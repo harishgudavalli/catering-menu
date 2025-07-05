@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Catering Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 10px; padding: 10px; background: #f9f9f9; }
+    .search-box { margin-bottom: 15px; }
+    input[type="text"] { width: 100%; padding: 8px; font-size: 16px; border-radius: 5px; border: 1px solid #ccc; }
+    .category { background: #eee; padding: 10px; border-radius: 5px; font-weight: bold; margin: 15px 0 5px; cursor: pointer; }
+    .item { background: white; margin: 5px 0 10px 10px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); padding: 10px; }
+    .hidden { display: none; }
+    .prices, .serves { font-size: 14px; color: #333; }
+    .tray { margin-bottom: 4px; }
+    .qty-input { width: 60px; margin-left: 10px; }
+    .total { font-size: 18px; font-weight: bold; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>India Paradise - Catering Menu</h2>
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search for items...">
+  </div>
+  <div class='category' data-target='section0'>BIRYANIS</div>
+<div id='section0' class='items'><div class='item'><h3>All Paneer, Veg Keema Biryani </h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $28.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='28.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $42.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='42.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $64.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='64.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $94.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='94.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $129.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='129.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> People serving </div></div><div class='item'><h3>Andhra Kaju, Jackfruit Biryani</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $28.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='28.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $42.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='42.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $64.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='64.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $94.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='94.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $129.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='129.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 3+</div></div><div class='item'><h3>Kaju Mushroom Biryani</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $29.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='29.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $44.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='44.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $104.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='104.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $149.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='149.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 5 to 6ppl</div></div><div class='item'><h3>Chicken DUM Biryani</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $29.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='29.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $44.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='44.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $104.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='104.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $149.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='149.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 8 to 9ppl</div></div><div class='item'><h3>Biryani 65, Special Chicken,Ghee Roast Chicken, Bezawada Bonless, and all Other chicken Biryanis</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $34.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='34.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $49.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='49.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $79.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='79.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $114.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='114.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $164.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='164.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 13 to 14ppl</div></div><div class='item'><h3>Goat DUM Biryani</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $37.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='37.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $54.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='54.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $89.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='89.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $129.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='129.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $179.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='179.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 17 to 18ppl</div></div></div>
+<div class='category' data-target='section1'>APPETIZERS (VEG)</div>
+<div id='section1' class='items'><div class='item'><h3>Samosa Chaat</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $44.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='44.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 7 to 8ppl</div></div><div class='item'><h3>Tikki Chaat</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $44.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='44.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div></div></div><div class='item'><h3>Mixed Veg Pakoda                                      *Confirm with Kitchen before taking order</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $55
+                  <input class='qty-input' type='number' min='0' value='0' data-price='55'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $75
+                  <input class='qty-input' type='number' min='0' value='0' data-price='75'>
+                </div></div><div class='serves'><strong>Serves:</strong> 14-16ppl</div></div><div class='item'><h3>Gobi Appetizers (Manchuria, Chilli, 65,Guntur, Kervepadu, Karampodi and all)</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $54.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='54.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $99.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='99.99'>
+                </div></div></div><div class='item'><h3>Baby Corn Appertizers (Manchuria, Chilli, 65,Guntur, Kervepadu, Karampodi and all) *Confirm with Kitchen before taking order</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $59.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='59.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $104.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='104.99'>
+                </div></div></div><div class='item'><h3>Panner Appetizers (Manchuria, Chilli, 65,Guntur, Kervepadu, Karampodi and all)</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $64.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='64.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $109.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='109.99'>
+                </div></div></div><div class='item'><h3>All Paneer Tikkas</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $64.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='64.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $109.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='109.99'>
+                </div></div></div><div class='item'><h3>All Soya Chaap</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $62.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='62.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $104.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='104.99'>
+                </div></div></div><div class='item'><h3>Veg Manchurian</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $64.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='64.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $109.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='109.99'>
+                </div></div></div><div class='item'><h3>Ghee Karam Idly</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $49.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='49.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $84.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='84.99'>
+                </div></div></div><div class='item'><h3>Cut Mirchi                                                     *Confirm with Kitchen before taking order</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $104.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='104.99'>
+                </div></div></div></div>
+<div class='category' data-target='section2'>APPETIZERS (NON-VEG)</div>
+<div id='section2' class='items'><div class='item'><h3>Chicken Appetizers(Manchuria, Chilli, 65,Guntur, Kervepadu, Karampodi and all)</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> People serving </div></div><div class='item'><h3>Fish Appetizers (Pokora, Manchuria, Chilli, 65, Apollo and all)</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $64.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='64.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $109.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='109.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 7 to 8ppl</div></div><div class='item'><h3>Tandoori Chicken Leg (1 Single PC)</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $5.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='5.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $Minumum 10 Leg Pcs
+                  <input class='qty-input' type='number' min='0' value='0' data-price='Minumum 10 Leg Pcs'>
+                </div></div></div><div class='item'><h3>All Chicken Tikkas</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 14-16ppl</div></div></div>
+<div class='category' data-target='section3'>CURRIES (VGE)</div>
+<div id='section3' class='items'><div class='item'><h3>Sambar</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $39.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='39.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $59.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='59.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $89.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='89.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> People serving </div></div><div class='item'><h3>Yelow Dal Tadka</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $49.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='49.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $84.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='84.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $109.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='109.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $129.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='129.99'>
+                </div></div></div><div class='item'><h3>Dal Makani</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $54.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='54.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $94.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='94.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $124.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='124.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $149.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='149.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 10 to 12</div></div><div class='item'><h3>Channa Masala</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $54.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='54.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $94.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='94.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $124.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='124.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $149.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='149.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 16 to 18</div></div><div class='item'><h3>Aloo Gobi</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $59.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='59.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $109.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='109.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 22 to 25</div></div><div class='item'><h3>Punjabi Mixed Veg</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $114.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='114.99'>
+                </div></div></div><div class='item'><h3>Paneer Butter Masala</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $114.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='114.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $149.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='149.99'>
+                </div></div></div><div class='item'><h3>Panner Tikka Masala</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $114.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='114.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $149.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='149.99'>
+                </div></div></div><div class='item'><h3>Methi Malai Paneer</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div></div><div class='item'><h3>Shahi Paneer</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div></div><div class='item'><h3>Malia Kofta</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div></div><div class='item'><h3>Methi Malia Mushroom</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div></div></div>
+<div class='category' data-target='section4'>CURRIES (NON-VEG)</div>
+<div id='section4' class='items'><div class='item'><h3>Chicken Dum Ka Murg</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> People serving </div></div><div class='item'><h3>Kadai Chicken </h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div></div><div class='item'><h3>Butter Chicken</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 10 to 12</div></div><div class='item'><h3>Chicken Tikka Masala</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 16 to 18</div></div><div class='item'><h3>Andhra Chicken Curry</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $119.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='119.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 22 to 25</div></div><div class='item'><h3>Methi Malia Chicken, Chicken Korma</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $79.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='79.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $124.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='124.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $164.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='164.99'>
+                </div></div></div><div class='item'><h3>Rara Chicken</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $89.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='89.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $129.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='129.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $169.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='169.99'>
+                </div></div></div><div class='item'><h3>Goat Curry, Kadai Goat, Goat Vindaloo, Goat Rogan josh</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $89.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='89.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $129.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='129.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $169.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='169.99'>
+                </div></div></div><div class='item'><h3>Lamb Curry, Lamb Vindaloo,Lamb Rogan josh *Confirm with Kitchen before taking order</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $89.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='89.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $129.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='129.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $169.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='169.99'>
+                </div></div></div></div>
+<div class='category' data-target='section5'>RICE AND NAAN</div>
+<div id='section5' class='items'><div class='item'><h3>Tandoori Roti</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $2$ Each
+                  <input class='qty-input' type='number' min='0' value='0' data-price='2$ Each'>
+                </div></div></div><div class='item'><h3>Naan</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $2$ Each
+                  <input class='qty-input' type='number' min='0' value='0' data-price='2$ Each'>
+                </div></div></div><div class='item'><h3>Garlic Naan</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $2.5$ Each
+                  <input class='qty-input' type='number' min='0' value='0' data-price='2.5$ Each'>
+                </div></div></div><div class='item'><h3>Bullet Naan</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $2.5$ Each
+                  <input class='qty-input' type='number' min='0' value='0' data-price='2.5$ Each'>
+                </div></div></div><div class='item'><h3>White Rice</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $29.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='29.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $49.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='49.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $64.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='64.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $79.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='79.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> People serving </div></div><div class='item'><h3>Zeera Rice</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $32.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='32.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $54.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='54.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $84.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='84.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 6-7 ppl</div></div><div class='item'><h3>Garlic Rice</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $32.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='32.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $54.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='54.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $84.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='84.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 13-14 ppl</div></div><div class='item'><h3>Peas Pulao</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $34.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='34.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $59.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='59.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $89.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='89.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 17-18 ppl</div></div><div class='item'><h3>Veg Pulao</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $79.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='79.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $99.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='99.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 24-25 ppl</div></div><div class='item'><h3>Veg Dum Rice/Biryani Rice</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $34.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='34.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $59.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='59.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $74.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='74.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $89.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='89.99'>
+                </div></div></div></div>
+<div class='category' data-target='section6'>IDLY VADA</div>
+<div id='section6' class='items'><div class='item'><h3>Idly</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $2.25$ Each (Minimum 25 PCS)
+                  <input class='qty-input' type='number' min='0' value='0' data-price='2.25$ Each (Minimum 25 PCS)'>
+                </div></div></div><div class='item'><h3>Vada</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $3$ Each (Minimum 25 PCS)
+                  <input class='qty-input' type='number' min='0' value='0' data-price='3$ Each (Minimum 25 PCS)'>
+                </div></div></div></div>
+<div class='category' data-target='section7'>INDO CHINESE</div>
+<div id='section7' class='items'><div class='item'><h3>Veg Fried Rice/Noodels</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $39.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='39.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $69.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='69.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $89.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='89.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 6-7 ppl</div></div><div class='item'><h3>Chicken Fried Rice/Noodels</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $44.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='44.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $79.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='79.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $104.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='104.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 13-14 ppl</div></div><div class='item'><h3>Manchurian Veg Fried Rice/Noodels</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $49.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='49.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $84.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='84.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $99.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='99.99'>
+                </div></div><div class='serves'><strong>Serves:</strong> 17-18 ppl</div></div></div>
+<div class='category' data-target='section8'>DESSERTS</div>
+<div id='section8' class='items'><div class='item'><h3>Gulab Jamun</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $1.25$ Each (Minimum 20 PCS)
+                  <input class='qty-input' type='number' min='0' value='0' data-price='1.25$ Each (Minimum 20 PCS)'>
+                </div></div></div><div class='item'><h3>Gulab Jamun With Rabdi</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $2.25$ Each (Minimum 20 PCS)
+                  <input class='qty-input' type='number' min='0' value='0' data-price='2.25$ Each (Minimum 20 PCS)'>
+                </div></div></div><div class='item'><h3>Shahi Tukda</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $2.5$ Each (Minimum 20 PCS)
+                  <input class='qty-input' type='number' min='0' value='0' data-price='2.5$ Each (Minimum 20 PCS)'>
+                </div></div></div><div class='item'><h3>Rasmalia</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $2.25$ Each (Minimum 20 PCS)
+                  <input class='qty-input' type='number' min='0' value='0' data-price='2.25$ Each (Minimum 20 PCS)'>
+                </div></div></div><div class='item'><h3>Gajar ka Halwa</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Family Tray:</strong> $49.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='49.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $94.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='94.99'>
+                </div></div></div><div class='item'><h3>Fruit Custard</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Small Tray:</strong> $54.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='54.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Medium Tray:</strong> $99.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='99.99'>
+                </div></div></div><div class='item'><h3>Moong Dal Halwa</h3><div class='prices'>
+                <div class='tray'>
+                  <strong>Large Tray:</strong> $134.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='134.99'>
+                </div>
+                <div class='tray'>
+                  <strong>Extra Large Tray:</strong> $159.99
+                  <input class='qty-input' type='number' min='0' value='0' data-price='159.99'>
+                </div></div></div></div>
+  <div class="total">Estimated Total: <span id="totalAmount">$0.00</span></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".category").forEach(category => {
+        category.addEventListener("click", function () {
+          const sectionId = this.getAttribute("data-target");
+          const section = document.getElementById(sectionId);
+          if (section) section.classList.toggle("hidden");
+        });
+      });
+      function calculateTotal() {
+        let total = 0;
+        document.querySelectorAll(".qty-input").forEach(input => {
+          const price = parseFloat(input.getAttribute("data-price")) || 0;
+          const qty = parseInt(input.value) || 0;
+          total += price * qty;
+        });
+        document.getElementById("totalAmount").innerText = "$" + total.toFixed(2);
+      }
+      document.querySelectorAll(".qty-input").forEach(input => {
+        input.addEventListener("input", calculateTotal);
+      });
+      document.getElementById("search").addEventListener("input", function () {
+        const value = this.value.toLowerCase();
+        document.querySelectorAll(".item").forEach(item => {
+          const text = item.innerText.toLowerCase();
+          item.style.display = text.includes(value) ? "block" : "none";
+        });
+        document.querySelectorAll(".category").forEach(category => {
+          category.style.display = value === "" ? "block" : "block";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
